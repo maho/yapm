@@ -2,7 +2,7 @@
 
 (rather dependency tracker, but `yapm` is way better name than `yapdt`)
 
-`yapipdt` is tool for installing packages from pypi, and storing installed things in `requirements/*.txt` files. 
+`yapm` is tool for installing packages from pypi, and storing installed things in `requirements/*.txt` files. 
 
 ## Why?
 
@@ -11,13 +11,13 @@ Because I want to track packages I install in my environment, to have quite read
 ## How to use it:
 
 ```
-    $ yapipdt.sh packagename==requirements
+    $ yapm.sh packagename==requirements
 ```
 
 or
 
 ```
-    $ yapipdt.sh git+https://github.com/packageverndor/packagename
+    $ yapm.sh git+https://github.com/packageverndor/packagename
 ```
 
 Note! when installed from git, then package will be installed in edit mode
@@ -30,7 +30,7 @@ Note! when installed from git, then package will be installed in edit mode
 
 ## Why not pip freeze?
 
-Because pip freeze shows lot of dependencies, which are not important. 
+Because pip freeze shows lot of dependencies, which are not important. They can also fail to install half year later. 
 
 ## Why not pipenv?
 
