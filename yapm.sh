@@ -15,6 +15,7 @@ help() {
 
 install() {
     PKG="$1"
+    mkdir -p requirements
     REQFILE=requirements/$TYPE.txt
     set -e
     if [[ $PKG == git+* ]] || [[ $PKG == hg+* ]];then
